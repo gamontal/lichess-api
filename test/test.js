@@ -72,7 +72,7 @@ let server_test = function () {
       });
     });
 
-    it('GET /game/exports/hXI0wVeZ.pgn>', function (done) {
+    it('GET /game/export/<id>.pgn', function (done) {
       lichessApi.game.export('hXI0wVeZ', function (err, res) {
         try {
           should(JSON.parse(res)).have.property('pgn_url', 'https://en.lichess.org/api/game/export/hXI0wVeZ.pgn');
