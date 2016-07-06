@@ -16,6 +16,12 @@ $ cd ~/.node_modules
 $ git clone git://github.com/gmontalvoriv/lichess-api.git
 ```
 
+## Test
+
+```
+$ make test
+```
+
 ## Usage Examples
 
 #### Fetch one user
