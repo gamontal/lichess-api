@@ -1,4 +1,4 @@
-# lichess-api [![Build Status](https://travis-ci.org/gmontalvoriv/lichess-api.svg?branch=master)](https://travis-ci.org/gmontalvoriv/lichess-api)
+# lichess-api [![Build Status](https://travis-ci.org/gmontalvoriv/lichess-api.svg?branch=master)](https://travis-ci.org/gmontalvoriv/lichess-api) [![npm version](https://badge.fury.io/js/lichess-api.svg)](https://badge.fury.io/js/lichess-api)
 > :trophy: A NodeJS wrapper for the [Lichess API](https://en.lichess.org/developers)
 
 ## Installation
