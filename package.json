@@ -1,6 +1,6 @@
 {
   "name": "lichess-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS wrapper for the Lichess API",
   "main": "index.js",
   "scripts": {
