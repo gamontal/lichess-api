@@ -4,7 +4,7 @@
   "description": "A NodeJS wrapper for the Lichess API",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jshint --exclude ./node_modules && ./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/jshint --exclude ./node_modules && ./node_modules/.bin/mocha --harmony"
   },
   "repository": {
     "type": "git",
