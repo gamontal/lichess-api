@@ -69,6 +69,8 @@ lichess.game.export('hXI0wVeZ', function (err, pgn) {
 
 ## Methods
 
+***Note: All parameters are optional***
+
 ### `user`
 
 Fetch one or multiple users.
@@ -77,10 +79,10 @@ Fetch one or multiple users.
 
 ***Parameters:***
 
-Name | Description | Type | Required |
------|------------ |------|:----------:|
-team| filter users by team | `String` | No |
-nb| maximum number of users to return | `Integer` | No |
+Name | Description | Type |
+-----|------------ |------|
+team| filter users by team | `String` | 
+nb| maximum number of users to return | `Integer` |
 
 ### `user.games`
 
@@ -90,15 +92,15 @@ Fetch user games.
 
 ***Parameters:***
 
-Name | Description | Type | Required |
------|------------ |------|:----------:|
-nb| maximum number of games to return per page | `Integer` | No |
+Name | Description | Type |
+-----|------------ |------|
+nb| maximum number of games to return per page | `Integer` |
 page| for pagination | `Integer` | No |
-with_analysis| include deep analysis data in the result | `Integer` | No |
-with_moves| include a list of PGN moves | `Integer` | No |
-with_opening| include opening information | `Integer` | No |
-with_movetimes| include move time information | `Integer` | No |
-rated| filter rated or casual games | `Integer` | No |
+with_analysis| include deep analysis data in the result | `Integer` |
+with_moves| include a list of PGN moves | `Integer` |
+with_opening| include opening information | `Integer` |
+with_movetimes| include move time information | `Integer` |
+rated| filter rated or casual games | `Integer` |
 
 ### `game`
 
@@ -108,13 +110,13 @@ Fetch one game by ID.
 
 ***Parameters:***
 
-Name | Description | Type | Required |
------|------------ |------|:----------:|
-with_analysis| include deep analysis data in the result | `Integer` | No |
-with_moves| include a list of PGN moves | `Integer` | No |
-with_opening| include opening information | `Integer` | No |
-with_movetimes| include move time information | `Integer` | No |
-with_fens | include a list of FEN states | `Integer` | No |
+Name | Description | Type |
+-----|------------ |------|
+with_analysis| include deep analysis data in the result | `Integer` |
+with_moves| include a list of PGN moves | `Integer` |
+with_opening| include opening information | `Integer` |
+with_movetimes| include move time information | `Integer` |
+with_fens | include a list of FEN states | `Integer` |
 
 ### `game.export`
 
