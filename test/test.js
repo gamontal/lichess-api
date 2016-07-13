@@ -15,19 +15,48 @@ const game = require('./templates/game.json');
 const pgnExport = require('./templates/export.json');
 
 nock(apiServer)
-  .get('/user/thibault').reply(200, user);
+  .get('/user/thibault')
+  .reply(200, user);
+
 nock(apiServer)
-  .get('/user?team=coders&nb=10').reply(200, users);
+  .get('/user')
+  .query({
+    team: 'coders',
+    nb: 10
+  })
+  .reply(200, users);
+
 nock(apiServer)
-  .get('/user/thibault/games?nb=100&page=1&with_analysis=0&with_moves=0&with_opening=0&with_movetimes=0&rated=0').reply(200, userGames);
+  .get('/user/thibault/games')
+  .query({
+    nb: 100,
+    page: 1,
+    with_analysis: 0,
+    with_moves: 0,
+    with_opening: 0,
+    with_movetimes: 0,
+    rated: 0
+  })
+  .reply(200, userGames);
+
 nock(apiServer)
-  .get('/game/hXI0wVeZ?with_analysis=0&with_moves=0&with_opening=0&with_movetimes=0&with_fens=0').reply(200, game);
+  .get('/game/hXI0wVeZ')
+  .query({
+    with_analysis: 0,
+    with_moves: 0,
+    with_opening: 0,
+    with_movetimes: 0,
+    with_fens: 0
+  })
+  .reply(200, game);
+
 nock(apiServer)
-  .get('/game/export/hXI0wVeZ.pgn').reply(200, pgnExport);
+  .get('/game/export/hXI0wVeZ.pgn')
+  .reply(200, pgnExport);
 
 
 let server_test = function () {
-  describe('Testing API responses', function () {
+  describe('Testing lichess-api', function () {
     it('GET /user/<username>', function (done) {
       lichessApi.user('thibault', function (err, res) {
         try {
