@@ -1,4 +1,4 @@
-# lichess-api [![Build Status](https://travis-ci.org/gmontalvoriv/lichess-api.svg?branch=master)](https://travis-ci.org/gmontalvoriv/lichess-api) [![npm version](https://badge.fury.io/js/lichess-api.svg)](https://badge.fury.io/js/lichess-api) [![Known Vulnerabilities](https://snyk.io/test/npm/name/badge.svg)](https://snyk.io/test/npm/lichess-api)
+# lichess-api [![Build Status](https://travis-ci.org/gmontalvoriv/lichess-api.svg?branch=master)](https://travis-ci.org/gmontalvoriv/lichess-api) [![npm version](https://badge.fury.io/js/lichess-api.svg)](https://badge.fury.io/js/lichess-api) [![Known Vulnerabilities](https://snyk.io/test/npm/name/badge.svg)](https://snyk.io/test/npm/lichess-api) [![NSP Status](https://img.shields.io/badge/NSP%20status-no%20vulnerabilities-green.svg)](https://travis-ci.org/gmontalvoriv/lichess-api)
 
 > :trophy: A NodeJS wrapper for the [Lichess API](https://en.lichess.org/developers) 
 
